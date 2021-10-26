@@ -1,0 +1,21 @@
+<h1>*ngIf</h1>
+
+<hr>
+
+<h2 *ngIf="displayTexto; else elseBlock">Conteúdo que deverá ser exibido</h2>
+
+<ng-template #elseBlock>
+  <h2>Opção false</h2>
+</ng-template>
+
+<hr>
+
+<h2>Segunda Forma</h2>
+
+<div *ngIf="displayTexto; then thenBlock else elseBlock"></div>
+
+<ng-template #thenBlock>
+  <h3>Opção verdadeira Segunda forma de lançar o *ngIf</h3>
+</ng-template>
+
+
